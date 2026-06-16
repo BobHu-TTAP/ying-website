@@ -84,6 +84,32 @@ in `index.html` (canonical + OG/Twitter URLs), `robots.txt`, and `sitemap.xml`.
 
 ---
 
+## Live deployment (development)
+
+- **Repo:** https://github.com/BobHu-TTAP/ying-website (default branch `main`)
+- **Cloudflare Pages project:** `ying-website`
+- **Development URL:** https://development.ying-website.pages.dev
+- **Production branch:** `main` — intentionally left **without** a deployment, and **no
+  custom domain** is attached, so nothing is live on a production address yet.
+
+This was deployed with **Wrangler Direct Upload** (not Git-connected), so pushing to GitHub
+does **not** auto-deploy. To publish updates to the development URL:
+
+```bash
+export CLOUDFLARE_API_TOKEN=<your Pages:Edit token>
+export CLOUDFLARE_ACCOUNT_ID=<your account id>
+npx wrangler@latest pages deploy --branch development --commit-dirty true
+```
+
+**To enable auto-deploy on every `git push`** (recommended dev workflow): in the Cloudflare
+dashboard → Workers & Pages → `ying-website` → Settings → connect the GitHub repo. Set the
+production branch and any preview branches there. (This needs a one-time dashboard OAuth.)
+
+**To go to production:** deploy the `main` branch (`--branch main`) and attach the custom
+domain under the project's *Custom domains* tab.
+
+---
+
 ## Before launch — insert real content
 
 Every spot needing real content is marked with an HTML comment (`<!-- TODO… -->`). Search the
