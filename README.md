@@ -85,13 +85,13 @@ in `index.html` (canonical + OG/Twitter URLs), `robots.txt`, and `sitemap.xml`.
 
 ---
 
-## Live deployment (development)
+## Live deployment
 
 - **Repo:** https://github.com/BobHu-TTAP/ying-website (default branch `main`)
 - **Cloudflare Pages project:** `ying-website`
-- **Development URL:** https://development.ying-website.pages.dev
-- **Production branch:** `main` — intentionally left **without** a deployment, and **no
-  custom domain** is attached, so nothing is live on a production address yet.
+- **Production URL:** https://ying-website.pages.dev (live — `main` branch)
+- **Development URL:** https://development.ying-website.pages.dev (preview — `development` branch)
+- **Custom domain:** none attached yet; still on `*.pages.dev`.
 
 This was deployed with **Wrangler Direct Upload** (not Git-connected), so pushing to GitHub
 does **not** auto-deploy. To publish updates to the development URL:
