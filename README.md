@@ -1,7 +1,7 @@
 # YING — Brand identity + marketing website
 
 Brand system and marketing site for **Yonder Infrastructure Networks Group (YING)** — an
-independent, senior-led, bilingual (EN / 中文), AI-augmented infrastructure advisory firm
+independent, senior-led, bilingual (EN / 中文) infrastructure advisory firm
 based in New Zealand.
 
 Everything here is **framework-free**: semantic HTML5, modern CSS and a little vanilla JS.

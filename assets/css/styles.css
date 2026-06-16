@@ -161,7 +161,8 @@ ul { margin: 0; padding: 0; }
 .brand__mark { width: 38px; height: 38px; flex: none; }
 .brand__type { display: flex; flex-direction: column; line-height: 1; }
 .brand__name { font-family: var(--font-head); font-weight: 800; font-size: 1.32rem; color: var(--ink); letter-spacing: .01em; }
-.brand__sub { font-size: .58rem; font-weight: 600; letter-spacing: .18em; color: var(--slate); text-transform: uppercase; margin-top: 3px; white-space: nowrap; }
+.brand__sub { font-size: .56rem; font-weight: 600; letter-spacing: .11em; color: var(--slate); text-transform: uppercase; margin-top: 3px; white-space: nowrap; }
+.brand__sub .i { color: var(--teal-ink); font-weight: 700; }
 
 .nav { display: none; }
 .nav__list { display: flex; align-items: center; gap: clamp(.4rem, 1.6vw, 1.1rem); list-style: none; }
@@ -271,6 +272,11 @@ ul { margin: 0; padding: 0; }
 .pillar svg { color: var(--teal); flex: none; margin-top: 3px; }
 .pillar h3 { font-size: 1.12rem; margin-bottom: 2px; }
 .pillar p { color: var(--slate); margin: 0; font-size: .98rem; }
+
+/* Acronym breakdown — YING = Yonder Infrastructure Networks Group */
+.acronym { list-style: none; display: flex; flex-wrap: wrap; gap: .55rem 1.5rem; margin: .25rem 0 var(--s-3); padding: var(--s-2) 0; border-top: 1px solid var(--mist); border-bottom: 1px solid var(--mist); }
+.acronym li { display: flex; align-items: baseline; font-family: var(--font-head); font-weight: 600; color: var(--ink); font-size: 1.02rem; letter-spacing: -0.01em; white-space: nowrap; }
+.acronym .ini { font-weight: 800; font-size: 1.5rem; color: var(--teal-ink); line-height: .9; }
 
 /* ---------- Grid of cards (Services) ---------- */
 .card-grid { display: grid; gap: clamp(1rem, 2.4vw, 1.5rem); grid-template-columns: 1fr; }
