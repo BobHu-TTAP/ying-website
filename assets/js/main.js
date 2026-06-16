@@ -55,6 +55,19 @@
     });
   }
 
+  /* ---------- Logo → smooth scroll to the very top ----------
+     #top is the sticky header, which the browser treats as already in view, so a plain
+     anchor jump won't scroll. Handle the click explicitly. */
+  var brandLink = document.querySelector(".brand");
+  if (brandLink) {
+    brandLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      setMenu(false);
+      window.scrollTo({ top: 0, behavior: prefersReduced ? "auto" : "smooth" });
+      if (history.replaceState) history.replaceState(null, "", location.pathname + location.search);
+    });
+  }
+
   /* ---------- Scroll-spy: active nav link ---------- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav__link"));
   var sections = navLinks

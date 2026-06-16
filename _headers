@@ -7,6 +7,7 @@
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: geolocation=(), microphone=(), camera=()
 
-# Long-cache fingerprint-free static assets (safe: they change rarely; purge on deploy).
+# Assets are not content-hashed and the site is iterating, so revalidate every load
+# (cheap conditional GETs; updates show immediately). Add ?v=N to bust hard-cached copies.
 /assets/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=0, must-revalidate
