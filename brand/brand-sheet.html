@@ -7,12 +7,12 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
   <style>
     :root{
-      --ink:#0E2C4D; --navy-deep:#0A2138; --teal:#17A2A6; --teal-bright:#5FC6C9; --teal-ink:#0C6E72;
+      --ink:#0E2C4D; --navy-deep:#0A2138; --teal:#17A2A6; --teal-bright:#2BC4C8; --teal-ink:#0C6E72;
       --cloud:#F4F7FA; --mist:#E2E9F0; --slate:#56657A; --white:#fff;
-      --head:"Sora",system-ui,sans-serif; --body:"Inter",system-ui,sans-serif; --cjk:"Noto Sans SC",sans-serif;
+      --head:"Sora",system-ui,sans-serif; --body:"Inter",system-ui,sans-serif; --cjk:"Noto Sans SC",sans-serif; --brush:"Ma Shan Zheng",cursive;
     }
     *{box-sizing:border-box}
     body{margin:0;font-family:var(--body);color:var(--ink);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
@@ -20,7 +20,7 @@
     h1,h2,h3{font-family:var(--head);line-height:1.1;letter-spacing:-.01em;margin:0}
     h1{font-size:clamp(2rem,5vw,3rem);font-weight:800}
     h2{font-size:1.4rem;font-weight:700;margin-bottom:1rem}
-    .sub{color:var(--slate);max-width:60ch}
+    .sub{color:var(--slate);max-width:62ch}
     .eyebrow{font-family:var(--head);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-ink)}
     header.sheet{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:flex-end;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:1.5rem;margin-bottom:2.5rem}
     .meta{font-size:.85rem;color:var(--slate);text-align:right}
@@ -31,16 +31,13 @@
     .panel{border:1px solid var(--mist);border-radius:14px;padding:1.5rem;display:flex;align-items:center;justify-content:center;min-height:120px}
     .panel--navy{background:var(--ink);border-color:var(--ink)}
     .panel--cloud{background:var(--cloud)}
-    .panel .cap{font-size:.78rem;color:var(--slate)}
     .label{font-size:.78rem;color:var(--slate);margin-top:.5rem;font-weight:500}
-    /* Swatches */
     .swatch{border:1px solid var(--mist);border-radius:12px;overflow:hidden}
     .swatch .chip{height:88px}
     .swatch .info{padding:.7rem .85rem}
     .swatch .name{font-family:var(--head);font-weight:700;font-size:.95rem}
     .swatch .hex{font-family:var(--head);font-size:.82rem;color:var(--slate);letter-spacing:.02em}
     .swatch .use{font-size:.78rem;color:var(--slate);margin-top:.25rem}
-    /* Type specimens */
     .spec{border:1px solid var(--mist);border-radius:14px;padding:1.5rem;margin-bottom:1rem}
     .spec .fam{font-family:var(--head);font-weight:800;font-size:1.6rem}
     .spec .roles{color:var(--slate);font-size:.85rem;margin:.2rem 0 1rem}
@@ -52,9 +49,8 @@
     .two{display:grid;gap:1rem}@media(min-width:640px){.two{grid-template-columns:1fr 1fr}}
     .ok::before{content:"✓ ";color:var(--teal-ink);font-weight:700}
     .no::before{content:"✕ ";color:#C0392B;font-weight:700}
-    /* Clear-space diagram */
-    .clearspace{position:relative;background:var(--cloud);border:1px solid var(--mist);border-radius:14px;padding:48px;display:flex;justify-content:center}
-    .clearspace .box{position:relative;outline:2px dashed var(--teal);outline-offset:24px}
+    .clearspace{position:relative;background:transparent;border:0;padding:32px;display:flex;justify-content:center}
+    .clearspace .box{position:relative;outline:2px dashed var(--teal);outline-offset:22px}
     .minsizes{display:flex;align-items:flex-end;gap:2rem;flex-wrap:wrap}
     .minsizes .item{text-align:center}
     footer{margin-top:3rem;border-top:1px solid var(--mist);padding-top:1.5rem;color:var(--slate);font-size:.82rem}
@@ -70,7 +66,7 @@
         <p class="sub">Yonder Infrastructure Networks Group — visual identity essentials.</p>
       </div>
       <div class="meta">
-        Version 1.0 (draft)<br />
+        Version 1.1 (draft)<br />
         Issued 2026 · Internal reference<br />
         <!-- TODO: update version/owner before circulation -->
       </div>
@@ -80,19 +76,20 @@
     <section>
       <span class="eyebrow">01 — Logo system</span>
       <h2>The mark &amp; lockups</h2>
-      <p class="sub">An ascending “Y” lifts toward a horizon line — forward momentum (赢, to advance) meeting the long view (Yonder). A teal node marks the network hub. One master mark drives every variant.</p>
+      <p class="sub">A winged “Y” with forked, ascending arms (momentum — 赢, to win / advance) and a split stem, in a two-tone navy + teal. One master mark drives every variant; it reads from favicon to signage.</p>
 
       <div class="grid cols-2" style="margin-top:1.5rem">
         <div>
           <div class="panel panel--cloud">
-            <!-- Primary horizontal -->
             <svg viewBox="0 0 430 88" width="340" role="img" aria-label="Primary horizontal lockup">
-              <g transform="translate(6,12)">
-                <g fill="none" stroke="#0E2C4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/></g>
-                <path d="M12 50 H52" fill="none" stroke="#17A2A6" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="36" r="5.2" fill="#17A2A6"/>
+              <g transform="translate(2,12)">
+                <polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#0E2C4D"/>
+                <polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#17A2A6"/>
+                <rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#0E2C4D"/>
+                <rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#17A2A6"/>
               </g>
-              <text x="88" y="47" font-family="Sora,sans-serif" font-size="34" font-weight="800" letter-spacing=".5" fill="#0E2C4D">YING</text>
-              <text x="89" y="67" font-family="Inter,sans-serif" font-size="11" font-weight="600" letter-spacing="2.1" fill="#56657A">YONDER INFRASTRUCTURE NETWORKS GROUP</text>
+              <text x="84" y="47" font-family="Sora,sans-serif" font-size="34" font-weight="800" letter-spacing=".5" fill="#0E2C4D">YING</text>
+              <text x="85" y="67" font-family="Inter,sans-serif" font-size="11" font-weight="600" letter-spacing="2.1" fill="#56657A">YONDER INFRASTRUCTURE NETWORKS GROUP</text>
             </svg>
           </div>
           <p class="label">Primary horizontal lockup — default for headers, letterheads, signatures.</p>
@@ -100,14 +97,15 @@
 
         <div>
           <div class="panel panel--navy">
-            <!-- Reversed -->
             <svg viewBox="0 0 430 88" width="340" role="img" aria-label="Reversed lockup on navy">
-              <g transform="translate(6,12)">
-                <g fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/></g>
-                <path d="M12 50 H52" fill="none" stroke="#5FC6C9" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="36" r="5.2" fill="#5FC6C9"/>
+              <g transform="translate(2,12)">
+                <polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#fff"/>
+                <polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#2BC4C8"/>
+                <rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#fff"/>
+                <rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#2BC4C8"/>
               </g>
-              <text x="88" y="47" font-family="Sora,sans-serif" font-size="34" font-weight="800" letter-spacing=".5" fill="#fff">YING</text>
-              <text x="89" y="67" font-family="Inter,sans-serif" font-size="11" font-weight="600" letter-spacing="2.1" fill="#AFC0D4">YONDER INFRASTRUCTURE NETWORKS GROUP</text>
+              <text x="84" y="47" font-family="Sora,sans-serif" font-size="34" font-weight="800" letter-spacing=".5" fill="#fff">YING</text>
+              <text x="85" y="67" font-family="Inter,sans-serif" font-size="11" font-weight="600" letter-spacing="2.1" fill="#AFC0D4">YONDER INFRASTRUCTURE NETWORKS GROUP</text>
             </svg>
           </div>
           <p class="label">Reversed — on navy, photography or dark backgrounds.</p>
@@ -117,36 +115,40 @@
       <div class="grid cols-3" style="margin-top:1.25rem">
         <div>
           <div class="panel panel--cloud">
-            <!-- Stacked -->
-            <svg viewBox="0 0 220 152" width="150" role="img" aria-label="Stacked lockup">
-              <g transform="translate(78,6)">
-                <g fill="none" stroke="#0E2C4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/></g>
-                <path d="M12 50 H52" fill="none" stroke="#17A2A6" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="36" r="5.2" fill="#17A2A6"/>
+            <svg viewBox="0 0 200 158" width="150" role="img" aria-label="Stacked lockup with 赢">
+              <g transform="translate(68,6)">
+                <polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#0E2C4D"/>
+                <polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#17A2A6"/>
+                <rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#0E2C4D"/>
+                <rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#17A2A6"/>
               </g>
-              <text x="110" y="102" text-anchor="middle" font-family="Sora,sans-serif" font-size="30" font-weight="800" letter-spacing=".5" fill="#0E2C4D">YING</text>
-              <text x="110" y="124" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" letter-spacing="1.7" fill="#56657A">YONDER INFRASTRUCTURE</text>
-              <text x="110" y="139" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" letter-spacing="1.7" fill="#56657A">NETWORKS GROUP</text>
+              <text x="100" y="92" text-anchor="middle" font-family="Sora,sans-serif" font-size="30" font-weight="800" letter-spacing=".5" fill="#0E2C4D">YING</text>
+              <text x="100" y="138" text-anchor="middle" font-family="'Ma Shan Zheng',cursive" font-size="40" fill="#17A2A6">赢</text>
             </svg>
           </div>
-          <p class="label">Stacked — square / centred placements.</p>
+          <p class="label">Stacked + 赢 — square / centred placements.</p>
         </div>
         <div>
           <div class="panel panel--cloud">
-            <!-- Monogram -->
-            <svg viewBox="0 0 64 64" width="84" role="img" aria-label="Monogram">
-              <g fill="none" stroke="#0E2C4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/></g>
-              <path d="M12 50 H52" fill="none" stroke="#17A2A6" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="36" r="5.2" fill="#17A2A6"/>
+            <svg viewBox="0 0 64 64" width="78" role="img" aria-label="Monogram">
+              <polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#0E2C4D"/>
+              <polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#17A2A6"/>
+              <rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#0E2C4D"/>
+              <rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#17A2A6"/>
             </svg>
           </div>
           <p class="label">Monogram — avatars, stamps, small spaces.</p>
         </div>
         <div>
           <div class="panel panel--cloud">
-            <!-- App icon / favicon tile -->
             <svg viewBox="0 0 64 64" width="72" role="img" aria-label="App icon">
               <rect width="64" height="64" rx="14" fill="#0E2C4D"/>
-              <g fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 18 L32 36"/><path d="M46 16 L32 36"/><path d="M32 36 L32 48"/></g>
-              <path d="M16 48 H48" fill="none" stroke="#2BC4C8" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="36" r="5" fill="#2BC4C8"/>
+              <g transform="translate(32 33) scale(0.74) translate(-32 -31.5)">
+                <polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#fff"/>
+                <polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#2BC4C8"/>
+                <rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#fff"/>
+                <rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#2BC4C8"/>
+              </g>
             </svg>
           </div>
           <p class="label">App icon / favicon — navy tile.</p>
@@ -156,30 +158,35 @@
       <div class="grid cols-2" style="margin-top:1.25rem">
         <div>
           <div class="panel" style="background:#fff">
-            <!-- One-colour black -->
-            <svg viewBox="0 0 396 88" width="300" style="color:#000" role="img" aria-label="One-colour black lockup">
-              <g transform="translate(6,12)">
-                <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/></g>
-                <path d="M12 50 H52" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="36" r="5.2" fill="currentColor"/>
+            <svg viewBox="0 0 430 88" width="300" style="color:#000" role="img" aria-label="One-colour black lockup">
+              <g fill="currentColor">
+                <g transform="translate(2,12)">
+                  <polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="currentColor"/>
+                  <polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="currentColor"/>
+                  <rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="currentColor"/>
+                  <rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="currentColor"/>
+                </g>
+                <text x="84" y="47" font-family="Sora,sans-serif" font-size="34" font-weight="800" letter-spacing=".5" fill="currentColor">YING</text>
+                <text x="85" y="67" font-family="Inter,sans-serif" font-size="11" font-weight="600" letter-spacing="2.1" fill="currentColor">YONDER INFRASTRUCTURE NETWORKS GROUP</text>
               </g>
-              <text x="88" y="47" font-family="Sora,sans-serif" font-size="34" font-weight="800" letter-spacing=".5" fill="currentColor">YING</text>
-              <text x="89" y="67" font-family="Inter,sans-serif" font-size="11" font-weight="600" letter-spacing="2.1" fill="currentColor">YONDER INFRASTRUCTURE NETWORKS GROUP</text>
             </svg>
           </div>
           <p class="label">One-colour black — single-ink print, fax, engraving.</p>
         </div>
         <div>
-          <div class="panel panel--cloud" style="flex-direction:column;gap:1rem">
-            <div class="clearspace" style="padding:32px;background:transparent;border:0">
+          <div class="panel panel--cloud">
+            <div class="clearspace">
               <div class="box">
                 <svg viewBox="0 0 64 64" width="60" aria-hidden="true">
-                  <g fill="none" stroke="#0E2C4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/></g>
-                  <path d="M12 50 H52" fill="none" stroke="#17A2A6" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="36" r="5.2" fill="#17A2A6"/>
+                  <polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#0E2C4D"/>
+                  <polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#17A2A6"/>
+                  <rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#0E2C4D"/>
+                  <rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#17A2A6"/>
                 </svg>
               </div>
             </div>
           </div>
-          <p class="label">Clear space — keep free space on all sides equal to the height of the “Y” cap (shown dashed).</p>
+          <p class="label">Clear space — keep free space on all sides equal to the height of the wing tips (shown dashed).</p>
         </div>
       </div>
 
@@ -187,15 +194,15 @@
         <h3 style="font-size:1rem;margin-bottom:.5rem">Minimum sizes</h3>
         <div class="minsizes">
           <div class="item">
-            <svg viewBox="0 0 64 64" width="24" aria-hidden="true"><g fill="none" stroke="#0E2C4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/></g><path d="M12 50 H52" fill="none" stroke="#17A2A6" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="36" r="5.2" fill="#17A2A6"/></svg>
+            <svg viewBox="0 0 64 64" width="24" aria-hidden="true"><polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#0E2C4D"/><polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#17A2A6"/><rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#0E2C4D"/><rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#17A2A6"/></svg>
             <p class="label">Monogram ≥ 24px</p>
           </div>
           <div class="item">
-            <svg viewBox="0 0 64 64" width="16" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0E2C4D"/><g fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 18 L32 36"/><path d="M46 16 L32 36"/><path d="M32 36 L32 48"/></g><path d="M16 48 H48" fill="none" stroke="#2BC4C8" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="36" r="5" fill="#2BC4C8"/></svg>
+            <svg viewBox="0 0 64 64" width="16" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0E2C4D"/><g transform="translate(32 33) scale(0.74) translate(-32 -31.5)"><polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#fff"/><polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#2BC4C8"/><rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#fff"/><rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#2BC4C8"/></g></svg>
             <p class="label">Favicon ≥ 16px</p>
           </div>
           <div class="item">
-            <svg viewBox="0 0 430 88" width="170" aria-hidden="true"><g transform="translate(6,12)"><g fill="none" stroke="#0E2C4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/></g><path d="M12 50 H52" fill="none" stroke="#17A2A6" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="36" r="5.2" fill="#17A2A6"/></g><text x="88" y="47" font-family="Sora,sans-serif" font-size="34" font-weight="800" fill="#0E2C4D">YING</text><text x="89" y="67" font-family="Inter,sans-serif" font-size="11" font-weight="600" letter-spacing="2.1" fill="#56657A">YONDER INFRASTRUCTURE NETWORKS GROUP</text></svg>
+            <svg viewBox="0 0 430 88" width="160" aria-hidden="true"><g transform="translate(2,12)"><polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#0E2C4D"/><polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#17A2A6"/><rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#0E2C4D"/><rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#17A2A6"/></g><text x="84" y="47" font-family="Sora,sans-serif" font-size="34" font-weight="800" fill="#0E2C4D">YING</text><text x="85" y="67" font-family="Inter,sans-serif" font-size="11" font-weight="600" letter-spacing="2.1" fill="#56657A">YONDER INFRASTRUCTURE NETWORKS GROUP</text></svg>
             <p class="label">Full lockup ≥ 120px wide</p>
           </div>
         </div>
@@ -206,14 +213,13 @@
     <section>
       <span class="eyebrow">02 — Colour</span>
       <h2>Palette</h2>
-      <p class="sub">A deep, trustworthy navy carries the brand; a single horizon-teal accent signals momentum and the long view. Body text is always navy or slate on light; teal is reserved for accents, links, CTAs and the mark.</p>
+      <p class="sub">A deep, trustworthy navy carries the brand; a single horizon-teal accent signals momentum. The mark splits navy (left wing) and teal (right wing); on dark backgrounds the teal brightens. Body text is always navy or slate on light.</p>
       <div class="grid cols-4" style="margin-top:1.5rem">
-        <div class="swatch"><div class="chip" style="background:#0E2C4D"></div><div class="info"><div class="name">Navy <span class="aaa">Base</span></div><div class="hex">#0E2C4D</div><div class="use">Primary brand, body text, dark sections. ≈12:1 on white.</div></div></div>
-        <div class="swatch"><div class="chip" style="background:#17A2A6"></div><div class="info"><div class="name">Horizon Teal</div><div class="hex">#17A2A6</div><div class="use">Accent: CTAs, links, icons, the mark.</div></div></div>
-        <div class="swatch"><div class="chip" style="background:#0C6E72"></div><div class="info"><div class="name">Teal Ink</div><div class="hex">#0C6E72</div><div class="use">Teal text on white. <span class="aa">AA</span></div></div></div>
+        <div class="swatch"><div class="chip" style="background:#0E2C4D"></div><div class="info"><div class="name">Navy <span class="aaa">Base</span></div><div class="hex">#0E2C4D</div><div class="use">Primary brand, left wing, body text. ≈14:1 on white.</div></div></div>
+        <div class="swatch"><div class="chip" style="background:#17A2A6"></div><div class="info"><div class="name">Horizon Teal</div><div class="hex">#17A2A6</div><div class="use">Accent: right wing, links, icons.</div></div></div>
+        <div class="swatch"><div class="chip" style="background:#2BC4C8"></div><div class="info"><div class="name">Teal Bright</div><div class="hex">#2BC4C8</div><div class="use">The mark + accents on navy / dark.</div></div></div>
         <div class="swatch"><div class="chip" style="background:#0C7C80"></div><div class="info"><div class="name">Teal CTA</div><div class="hex">#0C7C80</div><div class="use">Button fill — white text passes <span class="aa">AA</span> (4.99:1).</div></div></div>
-        <div class="swatch"><div class="chip" style="background:#5FC6C9"></div><div class="info"><div class="name">Teal Bright</div><div class="hex">#5FC6C9</div><div class="use">Accent on navy / dark only.</div></div></div>
-        <div class="swatch"><div class="chip" style="background:#0A2138"></div><div class="info"><div class="name">Navy Deep</div><div class="hex">#0A2138</div><div class="use">Footer, overlays, gradient end.</div></div></div>
+        <div class="swatch"><div class="chip" style="background:#0C6E72"></div><div class="info"><div class="name">Teal Ink</div><div class="hex">#0C6E72</div><div class="use">Teal text on white. <span class="aa">AA</span></div></div></div>
         <div class="swatch"><div class="chip" style="background:#56657A"></div><div class="info"><div class="name">Slate</div><div class="hex">#56657A</div><div class="use">Secondary text. <span class="aa">AA</span> on white.</div></div></div>
         <div class="swatch"><div class="chip" style="background:#F4F7FA"></div><div class="info"><div class="name">Cloud</div><div class="hex">#F4F7FA</div><div class="use">Alternating section background.</div></div></div>
         <div class="swatch"><div class="chip" style="background:#E2E9F0"></div><div class="info"><div class="name">Mist</div><div class="hex">#E2E9F0</div><div class="use">Borders, dividers, card outlines.</div></div></div>
@@ -224,7 +230,7 @@
     <section>
       <span class="eyebrow">03 — Typography</span>
       <h2>Type pairing</h2>
-      <p class="sub">All three families are open-licence (SIL OFL) Google Fonts — free for web and product use.</p>
+      <p class="sub">All families are open-licence (SIL OFL) Google Fonts — free for web and product use.</p>
 
       <div class="spec" style="margin-top:1.5rem">
         <div class="fam" style="font-family:var(--head)">Sora</div>
@@ -240,9 +246,14 @@
       </div>
 
       <div class="spec">
+        <div class="fam" style="font-family:var(--brush);font-weight:400;font-size:2rem">赢 · Ma Shan Zheng</div>
+        <div class="roles">Brand Chinese character (赢 / 英) · calligraphic brush · display only</div>
+        <div style="font-family:var(--brush);font-size:2.6rem;color:var(--teal)">赢　英　远见致胜</div>
+      </div>
+
+      <div class="spec">
         <div class="fam cjk" style="font-family:var(--cjk)">Noto Sans SC · 思源黑体</div>
-        <div class="roles">Chinese (Simplified) · weights 400–700</div>
-        <div class="cjk" style="font-family:var(--cjk);font-size:1.4rem">赢 远见致胜　·　英 卓越标准</div>
+        <div class="roles">Chinese body &amp; UI text · weights 400–700 · readable sans</div>
         <div class="cjk" style="font-family:var(--cjk);color:var(--slate)">着眼长远的基础设施咨询 — 资深主导、双语服务、AI 赋能。</div>
       </div>
     </section>
@@ -253,24 +264,24 @@
       <h2>Do &amp; don’t</h2>
       <div class="two" style="margin-top:1rem">
         <ul class="rule-list" style="list-style:none;padding-left:0">
-          <li class="ok">Use the navy + teal lockup on light backgrounds.</li>
-          <li class="ok">Use the reversed (white) lockup on navy / photos.</li>
-          <li class="ok">Maintain clear space = the “Y” cap-height on all sides.</li>
-          <li class="ok">Keep teal for accents — links, CTAs, the node and horizon.</li>
+          <li class="ok">Use the navy + teal mark on light backgrounds.</li>
+          <li class="ok">On navy / photos, use the white + bright-teal reversed mark.</li>
+          <li class="ok">Keep clear space ≥ the height of the wing tips on all sides.</li>
+          <li class="ok">Set 赢 / 英 in Ma Shan Zheng for display; 中文 body in Noto Sans SC.</li>
           <li class="ok">Outline the wordmark text for print / third-party handoff.</li>
         </ul>
         <ul class="rule-list" style="list-style:none;padding-left:0">
           <li class="no">Don’t recolour the mark outside the palette.</li>
-          <li class="no">Don’t stretch, rotate or add effects (shadows, bevels).</li>
+          <li class="no">Don’t stretch, rotate, or add effects (shadows, bevels).</li>
+          <li class="no">Don’t swap the navy / teal wings or even them to one colour (except the one-colour and reversed variants).</li>
           <li class="no">Don’t set teal body text on white (use Teal Ink, or navy).</li>
-          <li class="no">Don’t place the navy mark on busy or low-contrast imagery.</li>
           <li class="no">Don’t add yin-yang, dragon or other literal motifs.</li>
         </ul>
       </div>
     </section>
 
     <footer>
-      YING — Yonder Infrastructure Networks Group · Brand sheet v1.0 (draft). Original artwork; Google Fonts under SIL OFL.
+      YING — Yonder Infrastructure Networks Group · Brand sheet v1.1 (draft). Original artwork; Google Fonts under SIL OFL.
       <!-- TODO: add brand owner / contact for queries before circulating externally. -->
     </footer>
   </div>

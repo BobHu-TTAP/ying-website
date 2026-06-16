@@ -25,6 +25,7 @@
   --font-head: "Sora", "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-cjk:  "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-brush: "Ma Shan Zheng", "KaiTi", "STKaiti", cursive;  /* calligraphic — brand 赢/英 display only */
 
   /* Spacing scale (8px base) */
   --s-1: 0.5rem;  --s-2: 1rem;   --s-3: 1.5rem;  --s-4: 2rem;
@@ -256,7 +257,7 @@ ul { margin: 0; padding: 0; }
 .story-card::after { content:""; position:absolute; inset:auto -30% -40% auto; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle, rgba(23,162,166,.35), transparent 70%); }
 .glyph-row { display: flex; gap: var(--s-3); margin-bottom: var(--s-3); position: relative; z-index: 1; }
 .glyph {
-  font-family: var(--font-cjk); font-size: 2.6rem; font-weight: 700; line-height: 1; color: #fff;
+  font-family: var(--font-brush); font-size: 2.5rem; font-weight: 400; line-height: 1; color: #fff;
   background: rgba(255,255,255,.06); border: 1px solid rgba(95,198,201,.3); border-radius: 12px;
   width: 76px; height: 76px; display: grid; place-items: center; flex: none;
 }

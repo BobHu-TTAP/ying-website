@@ -11,15 +11,16 @@ No build step, no dependencies. Open `index.html` and it runs.
 
 ## Design decisions (summary)
 
-- **Logo concept — "Ascending Y + horizon."** A geometric *Y* whose arms lift toward a
-  horizon line — forward momentum (**赢**, *yíng*, to win / advance) meeting the long view
-  (*Yonder*). A teal node marks the network hub. One master mark drives every variant; it
-  reads from favicon (16px) to signage.
+- **Logo concept — "Winged Y."** A geometric *Y* with forked, ascending arms (forward
+  momentum — **赢**, *yíng*, to win / advance) and a split stem, in a two-tone navy + teal
+  (left wing navy, right wing teal). One master mark drives every variant; it reads from
+  favicon (16px) to signage.
 - **Palette.** Deep navy `#0E2C4D` base + a single **horizon-teal** accent `#17A2A6`
   (buttons use a slightly deeper `#0C7C80` so white text passes WCAG AA). Neutrals: Cloud,
   Mist, Slate. All text pairings verified ≥ AA (navy/white ≈ 14:1).
-- **Type.** **Sora** (headings + wordmark), **Inter** (body), **Noto Sans SC** (中文) — all
-  open-licence (SIL OFL) Google Fonts.
+- **Type.** **Sora** (headings + wordmark), **Inter** (body), **Noto Sans SC** (中文 body),
+  and **Ma Shan Zheng** (the brand 赢 / 英 calligraphic characters) — all open-licence
+  (SIL OFL) Google Fonts.
 - **Taglines.** Hero — *"Beyond the build."*; positioning — *"Infrastructure advisory for
   the long view."*
 - **Architecture.** Single page with sticky anchor navigation; mobile-first; restrained motion.

@@ -1,18 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 152" width="220" height="152" role="img" aria-labelledby="ying-stacked-title">
-  <title id="ying-stacked-title">YING — Yonder Infrastructure Networks Group (stacked)</title>
-  <!-- NOTE: outline the <text> for print/handoff; the mark is pure vector. -->
-  <!-- Mark, centred -->
-  <g transform="translate(78,6)">
-    <g fill="none" stroke="#0E2C4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M15 16 L32 36"/>
-      <path d="M49 14 L32 36"/>
-      <path d="M32 36 L32 50"/>
-    </g>
-    <path d="M12 50 H52" fill="none" stroke="#17A2A6" stroke-width="5" stroke-linecap="round"/>
-    <circle cx="32" cy="36" r="5.2" fill="#17A2A6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 158" width="200" height="158" role="img" aria-labelledby="ying-stacked-title">
+  <title id="ying-stacked-title">YING — Yonder Infrastructure Networks Group (stacked, with 赢)</title>
+  <!-- NOTE: outline the <text> for print/handoff. 赢 is set in Ma Shan Zheng (load the webfont to render). -->
+  <g transform="translate(68,6)">
+    <polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#0E2C4D"/>
+    <polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#17A2A6"/>
+    <rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#0E2C4D"/>
+    <rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#17A2A6"/>
   </g>
-  <!-- Wordmark -->
-  <text x="110" y="102" text-anchor="middle" font-family="Sora, 'Segoe UI', sans-serif" font-size="30" font-weight="800" letter-spacing="0.5" fill="#0E2C4D">YING</text>
-  <text x="110" y="124" text-anchor="middle" font-family="Inter, 'Segoe UI', sans-serif" font-size="10" font-weight="600" letter-spacing="1.7" fill="#56657A">YONDER INFRASTRUCTURE</text>
-  <text x="110" y="139" text-anchor="middle" font-family="Inter, 'Segoe UI', sans-serif" font-size="10" font-weight="600" letter-spacing="1.7" fill="#56657A">NETWORKS GROUP</text>
+  <text x="100" y="92" text-anchor="middle" font-family="Sora, 'Segoe UI', sans-serif" font-size="30" font-weight="800" letter-spacing="0.5" fill="#0E2C4D">YING</text>
+  <text x="100" y="138" text-anchor="middle" font-family="'Ma Shan Zheng', cursive" font-size="40" fill="#17A2A6">赢</text>
 </svg>

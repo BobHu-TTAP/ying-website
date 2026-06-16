@@ -1,14 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="ying-favicon-title">
   <title id="ying-favicon-title">YING app icon</title>
-  <!-- Navy app-icon tile for favicon / home-screen use. -->
   <rect width="64" height="64" rx="14" fill="#0E2C4D"/>
-  <!-- Ascending Y in white for legibility at 16px. -->
-  <g fill="none" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M18 18 L32 36"/>
-    <path d="M46 16 L32 36"/>
-    <path d="M32 36 L32 48"/>
+  <g transform="translate(32 33) scale(0.74) translate(-32 -31.5)">
+    <polygon points="9,11 15,16 21,11 27,15 33,30 30,33 13,20" fill="#FFFFFF"/>
+    <polygon points="55,11 49,16 43,11 37,15 31,30 34,33 51,20" fill="#2BC4C8"/>
+    <rect x="29" y="30.5" width="2.6" height="21.5" rx="1" fill="#FFFFFF"/>
+    <rect x="32.4" y="30.5" width="2.6" height="21.5" rx="1" fill="#2BC4C8"/>
   </g>
-  <!-- Teal horizon + node carry the brand accent. -->
-  <path d="M16 48 H48" fill="none" stroke="#2BC4C8" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="32" cy="36" r="5" fill="#2BC4C8"/>
 </svg>
