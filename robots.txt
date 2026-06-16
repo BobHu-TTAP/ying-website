@@ -1,0 +1,6 @@
+# Yonder Infrastructure Networks Group
+User-agent: *
+Allow: /
+
+# TODO: update the host below to the production domain before launch.
+Sitemap: https://www.example-ying.co.nz/sitemap.xml

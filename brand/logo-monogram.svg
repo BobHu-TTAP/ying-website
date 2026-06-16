@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="ying-monogram-title">
+  <title id="ying-monogram-title">YING — Yonder Infrastructure Networks Group monogram</title>
+  <!-- Ascending "Y": two arms rise toward the horizon (forward motion + the long view).
+       The right arm sits slightly higher than the left to imply momentum. -->
+  <g fill="none" stroke="#0E2C4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 16 L32 36"/>
+    <path d="M49 14 L32 36"/>
+    <path d="M32 36 L32 50"/>
+  </g>
+  <!-- Horizon line: the "yonder" / long view, grounding the mark. -->
+  <path d="M12 50 H52" fill="none" stroke="#17A2A6" stroke-width="5" stroke-linecap="round"/>
+  <!-- Network node: the hub where the edges meet. -->
+  <circle cx="32" cy="36" r="5.2" fill="#17A2A6"/>
+</svg>

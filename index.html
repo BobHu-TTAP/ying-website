@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0E2C4D" />
+
+  <!-- ===== SEO ===== -->
+  <title>YING — Yonder Infrastructure Networks Group | Infrastructure advisory for the long view</title>
+  <meta name="description" content="Yonder Infrastructure Networks Group (YING) is an independent, senior-led infrastructure advisory firm in New Zealand — bilingual English / 中文 and AI-augmented. Advisory for road authorities, construction, engineering consultants and 3-Waters." />
+  <!-- TODO: confirm production domain, then set the canonical + og:url below. Placeholder used. -->
+  <link rel="canonical" href="https://www.example-ying.co.nz/" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ===== Open Graph / Twitter ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="YING — Yonder Infrastructure Networks Group" />
+  <meta property="og:title" content="YING — Infrastructure advisory for the long view" />
+  <meta property="og:description" content="Independent, senior-led, bilingual (EN / 中文), AI-augmented infrastructure advisory. New Zealand-based with Asia-Pacific reach." />
+  <meta property="og:url" content="https://www.example-ying.co.nz/" />
+  <!-- og-image.png is generated from the brand assets; see README. 1200×630. -->
+  <meta property="og:image" content="https://www.example-ying.co.nz/assets/img/og-image.png" />
+  <meta property="og:image:alt" content="YING — Yonder Infrastructure Networks Group" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="YING — Infrastructure advisory for the long view" />
+  <meta name="twitter:description" content="Independent, senior-led, bilingual (EN / 中文), AI-augmented infrastructure advisory based in New Zealand." />
+  <meta name="twitter:image" content="https://www.example-ying.co.nz/assets/img/og-image.png" />
+
+  <!-- ===== Icons / manifest ===== -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="brand/ying-icon-512.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- ===== Fonts (Google Fonts, OFL) ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- ===== Structured data (truthful fields only; contact details omitted until confirmed) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Yonder Infrastructure Networks Group",
+    "alternateName": "YING",
+    "description": "Independent, senior-led infrastructure business advisory. Bilingual English / Chinese and AI-augmented. New Zealand-based with Asia-Pacific reach.",
+    "url": "https://www.example-ying.co.nz/",
+    "areaServed": ["New Zealand", "Asia-Pacific"],
+    "knowsLanguage": ["en", "zh"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "21B Gabador Place, Mount Wellington",
+      "addressLocality": "Auckland",
+      "postalCode": "1060",
+      "addressCountry": "NZ"
+    }
+    /* TODO: add "telephone", "email", "logo", "sameAs" (LinkedIn etc.), and "taxID" (NZBN) once confirmed. */
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="YING — Yonder Infrastructure Networks Group, home">
+        <!-- Inline monogram mark (matches brand/logo-monogram.svg) -->
+        <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <g fill="none" stroke="#0E2C4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/>
+          </g>
+          <path d="M12 50 H52" fill="none" stroke="#17A2A6" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="32" cy="36" r="5.2" fill="#17A2A6"/>
+        </svg>
+        <span class="brand__type">
+          <span class="brand__name">YING</span>
+          <span class="brand__sub">Infrastructure Networks Group</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about"    data-en="Why YING"  data-zh="关于">Why YING</a></li>
+          <li><a class="nav__link" href="#services" data-en="Services"  data-zh="服务">Services</a></li>
+          <li><a class="nav__link" href="#approach" data-en="Approach"  data-zh="方法">Approach</a></li>
+          <li><a class="nav__link" href="#reach"    data-en="Reach"     data-zh="区域">Reach</a></li>
+          <li><a class="nav__link" href="#insights" data-en="Insights"  data-zh="洞察">Insights</a></li>
+          <li><a class="nav__link" href="#team"     data-en="Team"      data-zh="团队">Team</a></li>
+          <li><a class="nav__link" href="#contact"  data-en="Contact"   data-zh="联系">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Language toggle (scaffold). Swaps elements carrying data-en/data-zh and sets <html lang>. -->
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language to 中文" title="Switch language">
+          <span class="lang-en">EN</span><span aria-hidden="true"> / </span><span class="lang-zh is-inactive">中文</span>
+        </button>
+        <a class="btn btn--primary" href="#contact" data-en="Contact" data-zh="联系我们">Contact</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation — kept OUTSIDE <header> so its position:fixed is relative to the
+       viewport (the header's backdrop-filter would otherwise become its containing block). -->
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <ul>
+      <li><a href="#about"    data-en="Why YING" data-zh="关于">Why YING</a></li>
+      <li><a href="#services" data-en="Services" data-zh="服务">Services</a></li>
+      <li><a href="#approach" data-en="Approach" data-zh="方法">Approach</a></li>
+      <li><a href="#reach"    data-en="Reach"    data-zh="区域">Reach</a></li>
+      <li><a href="#insights" data-en="Insights" data-zh="洞察">Insights</a></li>
+      <li><a href="#team"     data-en="Team"     data-zh="团队">Team</a></li>
+      <li><a href="#contact"  data-en="Contact"  data-zh="联系">Contact</a></li>
+    </ul>
+    <a class="btn btn--primary" href="#contact" data-en="Start a conversation" data-zh="联系我们">Start a conversation</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <!-- Oversized watermark of the mark -->
+      <svg class="hero__watermark" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="#5FC6C9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/>
+        </g>
+        <path d="M12 50 H52" fill="none" stroke="#5FC6C9" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="32" cy="36" r="5" fill="#5FC6C9"/>
+      </svg>
+
+      <div class="container hero__inner">
+        <p class="hero__kicker" data-en="Independent infrastructure advisory · New Zealand" data-zh="独立基础设施咨询 · 新西兰">Independent infrastructure advisory · New Zealand</p>
+        <!-- Split into leaf spans so the accent survives the language swap (textContent-only). -->
+        <h1 id="hero-title"><span data-en="Beyond " data-zh="远见 · ">Beyond </span><span class="accent" data-en="the build." data-zh="致胜">the build.</span></h1>
+        <p class="hero__lead" data-en="Infrastructure advisory for the long view — senior-led, bilingual, and AI-augmented." data-zh="着眼长远的基础设施咨询——资深主导、双语服务、AI 赋能。">Infrastructure advisory for the long view — senior-led, bilingual, and AI-augmented.</p>
+        <p class="hero__cjk cjk">赢 远见致胜　·　英 卓越标准</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">
+            <span data-en="Start a conversation" data-zh="联系我们">Start a conversation</span>
+            <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost-dark" href="#services" data-en="Explore our services" data-zh="了解服务">Explore our services</a>
+        </div>
+
+        <!-- Differentiator proof strip (qualitative — no fabricated figures) -->
+        <div class="hero__stats" role="list">
+          <div class="hero__stat" role="listitem"><span class="n">Senior-led</span><span class="l" data-en="The advisors who win it, deliver it" data-zh="赢得项目者，亲自交付">The advisors who win it, deliver it</span></div>
+          <div class="hero__stat" role="listitem"><span class="n">EN / 中文</span><span class="l" data-en="Fluent bilingual capability" data-zh="流利的中英双语能力">Fluent bilingual capability</span></div>
+          <div class="hero__stat" role="listitem"><span class="n">AI-augmented</span><span class="l" data-en="Senior judgement, modern tooling" data-zh="资深判断，现代工具">Senior judgement, modern tooling</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ ABOUT / WHY YING ============================ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="reveal">
+          <p class="eyebrow" data-en="Why YING" data-zh="关于 YING">Why YING</p>
+          <h2 class="h2" id="about-title" data-en="Two readings. One ambition." data-zh="一名两义，志在致远。">Two readings. One ambition.</h2>
+          <!-- TODO(content): final approved English "about" copy. Below is original placeholder copy, safe to ship. -->
+          <p class="lead" data-en="YING is read two ways — and we mean both." data-zh="YING 有两种读法——我们两者兼具。">YING is read two ways — and we mean both.</p>
+          <p>We are an independent, boutique infrastructure advisory built on a simple idea: senior people, doing the actual work, held to an exacting standard. We help organisations make confident decisions about complex infrastructure — strategy, investment, procurement and delivery — across roads and the wider network of lifelines.</p>
+          <ul class="pillars">
+            <li class="pillar">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v6c0 5 3.5 8 9 9 5.5-1 9-4 9-9V7z"/><path d="m9 12 2 2 4-4"/></svg>
+              <div><h3 data-en="Senior-led delivery" data-zh="资深主导交付">Senior-led delivery</h3><p data-en="You work directly with experienced advisors — no hand-off to juniors." data-zh="您将直接与资深顾问合作，绝不转交初级人员。">You work directly with experienced advisors — no hand-off to juniors.</p></div>
+            </li>
+            <li class="pillar">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>
+              <div><h3 data-en="Bilingual EN / 中文" data-zh="中英双语">Bilingual EN / 中文</h3><p data-en="Genuine fluency that bridges NZ practice with Asia-Pacific partners." data-zh="真正的双语能力，连接新西兰实践与亚太伙伴。">Genuine fluency that bridges NZ practice with Asia-Pacific partners.</p></div>
+            </li>
+            <li class="pillar">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3m0 12v3M5 5l2 2m10 10 2 2M3 12h3m12 0h3M5 19l2-2m10-10 2-2"/><circle cx="12" cy="12" r="3.2"/></svg>
+              <div><h3 data-en="AI-augmented analysis" data-zh="AI 赋能分析">AI-augmented analysis</h3><p data-en="Modern tooling to test options and model scenarios — faster, deeper advice." data-zh="以现代工具检验方案、模拟情景——更快、更深入的建议。">Modern tooling to test options and model scenarios — faster, deeper advice.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="story-card reveal" aria-label="The meaning of YING">
+          <div class="glyph-row">
+            <span class="glyph cjk">赢<small>yíng · win</small></span>
+            <span class="glyph cjk">英<small>yīng · excellence</small></span>
+          </div>
+          <p><strong style="color:#fff">赢 <span class="pinyin">(yíng)</span></strong> — to win, to advance. The momentum to move a programme forward and secure the right outcome.</p>
+          <p><strong style="color:#fff">英 <span class="pinyin">(yīng)</span></strong> — excellence, the British standard of engineering rigour. The discipline we hold every recommendation to.</p>
+          <p style="margin-bottom:0">Read together with <em>Yonder</em> — the long view, what lies beyond the build — they describe how we work.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================ SERVICES ============================ -->
+    <section class="section section--alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow" data-en="What we do" data-zh="服务范围">What we do</p>
+          <h2 class="h2" id="services-title" data-en="Advisory across the infrastructure network" data-zh="覆盖基础设施网络的咨询服务">Advisory across the infrastructure network</h2>
+          <p class="lead" data-en="We advise four kinds of organisation — each with distinct pressures, each needing senior, independent counsel." data-zh="我们为四类机构提供咨询，各有不同挑战，皆需资深、独立的建议。">We advise four kinds of organisation — each with distinct pressures, each needing senior, independent counsel.</p>
+        </div>
+
+        <div class="card-grid">
+          <!-- Service 1 -->
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 9 4l3 9 2-4 6 11"/><path d="M3 20h18"/></svg></span>
+            <span class="card__tag" data-en="Public sector" data-zh="公共部门">Public sector</span>
+            <h3 data-en="Local Road Authorities (RCAs)" data-zh="地方道路管理机构（RCA）">Local Road Authorities (RCAs)</h3>
+            <p data-en="Strategy, asset management, and investment &amp; procurement advice for road controlling authorities planning for the long term." data-zh="为道路管理机构提供战略、资产管理及投资与采购建议，着眼长远规划。">Strategy, asset management, and investment &amp; procurement advice for road controlling authorities planning for the long term.</p>
+          </article>
+          <!-- Service 2 -->
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l5-3 5 3v13"/><path d="M9 21v-5h2v5M19 21V11l-4-2"/></svg></span>
+            <span class="card__tag" data-en="Contractors" data-zh="承建商">Contractors</span>
+            <h3 data-en="Road Construction Companies" data-zh="道路施工企业">Road Construction Companies</h3>
+            <p data-en="Commercial, procurement and delivery advisory — to bid sharper, price with confidence and deliver work profitably." data-zh="商务、采购与交付咨询——更精准投标、更有把握定价、更高效益地交付。">Commercial, procurement and delivery advisory — to bid sharper, price with confidence and deliver work profitably.</p>
+          </article>
+          <!-- Service 3 -->
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v4M15 3v4M5 7h14v4a7 7 0 0 1-14 0z"/><path d="M12 18v3M8 21h8"/></svg></span>
+            <span class="card__tag" data-en="Consultancies" data-zh="咨询公司">Consultancies</span>
+            <h3 data-en="Engineering Consultants" data-zh="工程顾问公司">Engineering Consultants</h3>
+            <p data-en="Capability, bid / tender and programme advisory to strengthen your offer and win the right work." data-zh="能力建设、投标与项目群咨询，提升竞争力、赢得合适项目。">Capability, bid / tender and programme advisory to strengthen your offer and win the right work.</p>
+          </article>
+          <!-- Service 4 -->
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 4.5 6 7.8 6 10.5a6 6 0 0 1-12 0C6 10.8 8 7.5 12 3z"/></svg></span>
+            <span class="card__tag" data-en="3-Waters" data-zh="三水">3-Waters</span>
+            <h3 data-en="3-Waters Asset Organisations" data-zh="三水资产机构">3-Waters Asset Organisations</h3>
+            <p data-en="Asset planning and network &amp; lifelines advisory for water, wastewater and stormwater design and construction." data-zh="为供水、污水与雨水的设计与施工提供资产规划及网络与生命线咨询。">Asset planning and network &amp; lifelines advisory for water, wastewater and stormwater design and construction.</p>
+          </article>
+        </div>
+
+        <div class="capabilities reveal">
+          <h3 data-en="Cross-cutting capabilities" data-zh="贯穿性专长">Cross-cutting capabilities</h3>
+          <ul class="chips">
+            <li class="chip" data-en="Asset management" data-zh="资产管理">Asset management</li>
+            <li class="chip" data-en="Procurement &amp; tender strategy" data-zh="采购与投标策略">Procurement &amp; tender strategy</li>
+            <li class="chip" data-en="Programme &amp; project advisory" data-zh="项目群与项目咨询">Programme &amp; project advisory</li>
+            <li class="chip" data-en="Infrastructure valuation" data-zh="基础设施估值">Infrastructure valuation</li>
+            <li class="chip" data-en="Network &amp; lifelines planning" data-zh="网络与生命线规划">Network &amp; lifelines planning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ APPROACH / DIFFERENTIATORS ============================ -->
+    <section class="section section--navy" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow" data-en="How we work" data-zh="工作方式">How we work</p>
+          <h2 class="h2" id="approach-title" data-en="Senior-led. Bilingual. AI-augmented." data-zh="资深主导 · 中英双语 · AI 赋能">Senior-led. Bilingual. AI-augmented.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step__n">01</span>
+            <h3 data-en="Senior-led delivery" data-zh="资深主导交付">Senior-led delivery</h3>
+            <p data-en="The people who win the work do the work. Clients deal directly with experienced advisors — continuity from first conversation to final recommendation." data-zh="赢得项目的人亲自执行。客户全程与资深顾问直接对接——从初次沟通到最终建议，一以贯之。">The people who win the work do the work. Clients deal directly with experienced advisors — continuity from first conversation to final recommendation.</p>
+            <div class="step__rule" aria-hidden="true"></div>
+          </div>
+          <div class="step reveal">
+            <span class="step__n">02</span>
+            <h3 data-en="Bilingual EN / 中文" data-zh="中英双语">Bilingual EN / 中文</h3>
+            <p data-en="Genuine fluency across English and Chinese — bridging New Zealand practice with Asia-Pacific partners, investors and supply chains." data-zh="真正流利的中英双语能力——连接新西兰实践与亚太伙伴、投资方及供应链。">Genuine fluency across English and Chinese — bridging New Zealand practice with Asia-Pacific partners, investors and supply chains.</p>
+            <div class="step__rule" aria-hidden="true"></div>
+          </div>
+          <div class="step reveal">
+            <span class="step__n">03</span>
+            <h3 data-en="AI-augmented analysis" data-zh="AI 赋能分析">AI-augmented analysis</h3>
+            <p data-en="We pair senior judgement with modern AI tooling to test options, model scenarios and pressure-test advice — sharper conclusions, delivered faster." data-zh="将资深判断与现代 AI 工具结合，检验方案、模拟情景、压力测试建议——结论更精准，交付更迅速。">We pair senior judgement with modern AI tooling to test options, model scenarios and pressure-test advice — sharper conclusions, delivered faster.</p>
+            <div class="step__rule" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ ASIA-PACIFIC REACH ============================ -->
+    <section class="section" id="reach" aria-labelledby="reach-title">
+      <div class="container reach__grid">
+        <div class="reveal">
+          <p class="eyebrow" data-en="Asia-Pacific &amp; beyond" data-zh="亚太及更远">Asia-Pacific &amp; beyond</p>
+          <h2 class="h2" id="reach-title" data-en="A New Zealand base with regional reach" data-zh="立足新西兰，辐射区域">A New Zealand base with regional reach</h2>
+          <!-- TODO(content): confirm regional ambition wording with directors. These are ambition statements, not claims of established offices. -->
+          <p class="reach__note" data-en="We are New Zealand-based, with the language, networks and ambition to work across the Asia-Pacific — and to support international development as the firm grows. Our bilingual capability lets us connect local infrastructure needs with regional partners, investment and expertise." data-zh="我们立足新西兰，凭借语言、网络与抱负服务于整个亚太地区，并随企业成长支持国际发展。双语能力使我们能将本地基础设施需求与区域伙伴、投资及专长相连接。">We are New Zealand-based, with the language, networks and ambition to work across the Asia-Pacific — and to support international development as the firm grows. Our bilingual capability lets us connect local infrastructure needs with regional partners, investment and expertise.</p>
+        </div>
+        <ul class="region-list reveal" aria-label="Regions of focus and ambition">
+          <li data-en="New Zealand — home market" data-zh="新西兰——本土市场">New Zealand — home market</li>
+          <li data-en="Australia &amp; the Pacific" data-zh="澳大利亚与太平洋地区">Australia &amp; the Pacific</li>
+          <li data-en="Greater China &amp; North Asia" data-zh="大中华区与北亚">Greater China &amp; North Asia</li>
+          <li data-en="South-East Asia" data-zh="东南亚">South-East Asia</li>
+          <li data-en="International development partners" data-zh="国际发展合作伙伴">International development partners</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ INSIGHTS / NEWS (placeholder) ============================ -->
+    <section class="section section--alt" id="insights" aria-labelledby="insights-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow" data-en="Insights" data-zh="洞察">Insights</p>
+          <h2 class="h2" id="insights-title" data-en="Perspectives — coming soon" data-zh="观点 —— 即将推出">Perspectives — coming soon</h2>
+          <p class="lead" data-en="Briefings on infrastructure strategy, procurement and asset management. Our first pieces are in preparation." data-zh="关于基础设施战略、采购与资产管理的简报。首批内容正在筹备中。">Briefings on infrastructure strategy, procurement and asset management. Our first pieces are in preparation.</p>
+        </div>
+        <!-- TODO(content): replace these placeholder cards with real articles (title, date, summary, link). -->
+        <div class="insight-grid">
+          <article class="insight reveal">
+            <span class="insight__meta" data-en="Perspective" data-zh="观点">Perspective</span>
+            <h3 data-en="Investment cases that survive scrutiny" data-zh="经得起审视的投资论证">Investment cases that survive scrutiny</h3>
+            <p data-en="Placeholder summary — replace with the article abstract once published." data-zh="占位摘要——发布后请替换为文章摘要。">Placeholder summary — replace with the article abstract once published.</p>
+            <span class="insight__soon" data-en="Coming soon" data-zh="即将推出">Coming soon</span>
+          </article>
+          <article class="insight reveal">
+            <span class="insight__meta" data-en="Perspective" data-zh="观点">Perspective</span>
+            <h3 data-en="Procurement strategy under pressure" data-zh="压力之下的采购策略">Procurement strategy under pressure</h3>
+            <p data-en="Placeholder summary — replace with the article abstract once published." data-zh="占位摘要——发布后请替换为文章摘要。">Placeholder summary — replace with the article abstract once published.</p>
+            <span class="insight__soon" data-en="Coming soon" data-zh="即将推出">Coming soon</span>
+          </article>
+          <article class="insight reveal">
+            <span class="insight__meta" data-en="Perspective" data-zh="观点">Perspective</span>
+            <h3 data-en="Asset management for the long view" data-zh="着眼长远的资产管理">Asset management for the long view</h3>
+            <p data-en="Placeholder summary — replace with the article abstract once published." data-zh="占位摘要——发布后请替换为文章摘要。">Placeholder summary — replace with the article abstract once published.</p>
+            <span class="insight__soon" data-en="Coming soon" data-zh="即将推出">Coming soon</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ TEAM (placeholder — no fabricated people) ============================ -->
+    <section class="section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow" data-en="Team" data-zh="团队">Team</p>
+          <h2 class="h2" id="team-title" data-en="Senior-led by design" data-zh="资深主导，源于设计">Senior-led by design</h2>
+          <p class="lead" data-en="Our team profiles will appear here. We don't publish placeholder people — real names, roles and photos go in below." data-zh="团队成员介绍将显示于此。我们不发布虚构人员——真实姓名、职务与照片将在下方填入。">Our team profiles will appear here. We don't publish placeholder people — real names, roles and photos go in below.</p>
+        </div>
+        <!-- TODO(content): for each team member add name, role (EN + 中文), photo (replace silhouette), short bio, and optional LinkedIn.
+             Do NOT publish photos without the individual's consent. -->
+        <div class="team-grid">
+          <!-- Repeat this card per person -->
+          <article class="person reveal">
+            <div class="person__avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+            <h3 data-en="Name to be confirmed" data-zh="姓名待定">Name to be confirmed</h3>
+            <span class="role" data-en="Role / title" data-zh="职务">Role / title</span><br>
+            <span class="role-zh cjk">职务待定</span>
+          </article>
+          <article class="person reveal">
+            <div class="person__avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+            <h3 data-en="Name to be confirmed" data-zh="姓名待定">Name to be confirmed</h3>
+            <span class="role" data-en="Role / title" data-zh="职务">Role / title</span><br>
+            <span class="role-zh cjk">职务待定</span>
+          </article>
+          <article class="person reveal">
+            <div class="person__avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+            <h3 data-en="Name to be confirmed" data-zh="姓名待定">Name to be confirmed</h3>
+            <span class="role" data-en="Role / title" data-zh="职务">Role / title</span><br>
+            <span class="role-zh cjk">职务待定</span>
+          </article>
+          <article class="person reveal">
+            <div class="person__avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+            <h3 data-en="Name to be confirmed" data-zh="姓名待定">Name to be confirmed</h3>
+            <span class="role" data-en="Role / title" data-zh="职务">Role / title</span><br>
+            <span class="role-zh cjk">职务待定</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="reveal">
+          <p class="eyebrow" data-en="Contact" data-zh="联系我们">Contact</p>
+          <h2 class="h2" id="contact-title" data-en="Start a conversation" data-zh="开启对话">Start a conversation</h2>
+          <p class="lead" data-en="Tell us about the decision in front of you. We'll reply personally." data-zh="告诉我们您正面临的决策，我们将亲自回复。">Tell us about the decision in front of you. We'll reply personally.</p>
+
+          <!-- Form posts nowhere by default. To go live, set action/method to a Formspree endpoint or
+               a Cloudflare Worker / Pages Function, and remove the JS preventDefault in main.js. -->
+          <form class="form" id="contactForm" novalidate
+                action="#" method="post" data-endpoint="REPLACE_WITH_FORM_ENDPOINT">
+            <div class="field">
+              <label for="name" data-en="Name" data-zh="姓名">Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="name-err" />
+              <span class="field__error" id="name-err" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="org" data-en="Organisation" data-zh="机构 / 公司">Organisation</label>
+              <input id="org" name="organisation" type="text" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="email" data-en="Email" data-zh="电子邮箱">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="email-err" />
+              <span class="field__error" id="email-err" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="message" data-en="How can we help?" data-zh="我们能提供什么帮助？">How can we help? <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" required aria-required="true" aria-describedby="msg-err"></textarea>
+              <span class="field__error" id="msg-err" role="alert"></span>
+            </div>
+            <div>
+              <button class="btn btn--primary" type="submit" data-en="Send message" data-zh="发送信息">Send message</button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+            <p class="form__note" data-en="By sending, you agree to be contacted about your enquiry. We never share your details." data-zh="发送即表示您同意我们就您的咨询与您联系。我们绝不分享您的信息。">By sending, you agree to be contacted about your enquiry. We never share your details.</p>
+          </form>
+        </div>
+
+        <aside class="contact-aside reveal" aria-label="Our details">
+          <h3 data-en="Registered office" data-zh="注册办公地址">Registered office</h3>
+          <div class="contact-line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <address style="font-style:normal">
+              Yonder Infrastructure Networks Group<br>
+              21B Gabador Place, Mount Wellington<br>
+              Auckland 1060, New Zealand
+            </address>
+          </div>
+          <!-- TODO(contact): insert real email + phone. Placeholders below are clearly marked. -->
+          <div class="contact-line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span class="muted"><a href="mailto:REPLACE@EXAMPLE.CO.NZ">hello@[domain].co.nz</a> <em>(placeholder)</em></span>
+          </div>
+          <div class="contact-line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.5a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>
+            <span class="muted"><a href="tel:+6400000000">+64 (0) 00 000 0000</a> <em>(placeholder)</em></span>
+          </div>
+          <div class="contact-line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span class="muted" data-en="Mon–Fri, 9:00–17:00 NZST" data-zh="周一至周五 9:00–17:00（新西兰时间）">Mon–Fri, 9:00–17:00 NZST</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <!-- Reversed (white) lockup -->
+          <svg class="footer-logo" viewBox="0 0 430 88" role="img" aria-label="YING — Yonder Infrastructure Networks Group">
+            <g transform="translate(6,12)">
+              <g fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 16 L32 36"/><path d="M49 14 L32 36"/><path d="M32 36 L32 50"/>
+              </g>
+              <path d="M12 50 H52" fill="none" stroke="#5FC6C9" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="32" cy="36" r="5.2" fill="#5FC6C9"/>
+            </g>
+            <text x="88" y="47" font-family="Sora, sans-serif" font-size="34" font-weight="800" letter-spacing="0.5" fill="#FFFFFF">YING</text>
+            <text x="89" y="67" font-family="Inter, sans-serif" font-size="11" font-weight="600" letter-spacing="2.1" fill="#AFC0D4">YONDER INFRASTRUCTURE NETWORKS GROUP</text>
+          </svg>
+          <p data-en="Infrastructure advisory for the long view. Independent, senior-led, bilingual and AI-augmented." data-zh="着眼长远的基础设施咨询。独立、资深主导、双语、AI 赋能。">Infrastructure advisory for the long view. Independent, senior-led, bilingual and AI-augmented.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-en="Explore" data-zh="导航">Explore</h4>
+          <ul>
+            <li><a href="#about"    data-en="Why YING" data-zh="关于">Why YING</a></li>
+            <li><a href="#services" data-en="Services" data-zh="服务">Services</a></li>
+            <li><a href="#approach" data-en="Approach" data-zh="方法">Approach</a></li>
+            <li><a href="#reach"    data-en="Reach"    data-zh="区域">Reach</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-en="More" data-zh="更多">More</h4>
+          <ul>
+            <li><a href="#insights" data-en="Insights" data-zh="洞察">Insights</a></li>
+            <li><a href="#team"     data-en="Team"     data-zh="团队">Team</a></li>
+            <li><a href="#contact"  data-en="Contact"  data-zh="联系">Contact</a></li>
+            <li><a href="brand/brand-sheet.html" data-en="Brand sheet" data-zh="品牌规范">Brand sheet</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-en="Registered office" data-zh="注册办公地址">Registered office</h4>
+          <address>
+            21B Gabador Place,<br>
+            Mount Wellington,<br>
+            Auckland 1060,<br>
+            New Zealand
+          </address>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <!-- TODO(legal): replace NZBN placeholder with the registered NZBN. -->
+        <span>© <span id="year">2026</span> Yonder Infrastructure Networks Group. All rights reserved.</span>
+        <span class="footer__legal">
+          <span data-en="NZBN: 0000 0000 0000 (placeholder)" data-zh="NZBN：0000 0000 0000（占位）">NZBN: 0000 0000 0000 (placeholder)</span>
+          <a href="#" data-en="Privacy" data-zh="隐私政策">Privacy</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

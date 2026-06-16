@@ -1,0 +1,5 @@
+# Cloudflare Pages project config for YING.
+# Static site, no build step — the output is the repository root.
+name = "ying-website"
+pages_build_output_dir = "."
+compatibility_date = "2026-06-17"

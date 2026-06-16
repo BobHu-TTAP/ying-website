@@ -1,0 +1,14 @@
+{
+  "name": "Yonder Infrastructure Networks Group",
+  "short_name": "YING",
+  "description": "Independent, senior-led, bilingual, AI-augmented infrastructure advisory. New Zealand-based with Asia-Pacific reach.",
+  "lang": "en-NZ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E2C4D",
+  "theme_color": "#0E2C4D",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "brand/ying-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
